@@ -1,2 +1,4 @@
 install breeze
 install spatie
+
+menjalankan npm run dev | php artisan serve
