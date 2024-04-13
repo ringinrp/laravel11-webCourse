@@ -14,4 +14,15 @@ class Teacher extends Model
         'user_id',
         'is_active'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    //1 guru bisa memiliki banyak kelas
+    public function course()
+    {
+        return $this->hasMany(Course::class);
+    }
 }

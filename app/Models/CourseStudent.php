@@ -14,4 +14,6 @@ class CourseStudent extends Model
         'user_id',
         'course_id',
     ];
+
+    //course student menjadi pivot table jadi tidak usah diatur relasinya
 }
